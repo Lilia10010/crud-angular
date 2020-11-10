@@ -1,0 +1,12 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home .title{
+    font-size: 27px;
+}
+.home .subtitle{
+    color: #4c4c4c;
+    font-size: 17px;
+}

@@ -1,0 +1,21 @@
+footer{
+    position: fixed;
+    bottom: 0;
+    
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    background: #0e0e0e;
+}
+
+footer{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px;
+    color: #fff;
+}
+
+footer span{
+    
+}

@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
+ 
 
     
 }
@@ -16,3 +17,18 @@
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-snack-bar-container {
+    background: #424242;
+    color: #6abf8c;
+  }
+
+  .msg-success{
+    background-color: #28a745;
+    color: #fff;
+  }
+  .msg-error{
+    background-color: rgb(277, 94, 107);
+    color: #fff;
+  }

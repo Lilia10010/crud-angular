@@ -1,14 +1,17 @@
 .header{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 17px;
     box-shadow: 1px 0 12px #b7b7b7;
+
+    background: #333333;
 }
 
 .header a {
     display: flex; 
     align-items: center;
-    text-decoration: none;       
+    text-decoration: none;   
+    color: #fff;;    
 }
 
 .header .logo{
@@ -17,4 +20,10 @@
 
 .header .title-group{
     padding-left: 10px;
+}
+
+.icon-header{
+    font-size: 17px;
+    color: #616161;
+    
 }

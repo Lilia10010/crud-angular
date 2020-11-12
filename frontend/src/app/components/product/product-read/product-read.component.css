@@ -1,0 +1,22 @@
+ul li{
+    color: #000;
+}
+
+table{
+    width: 100%;
+}
+.edit{
+    padding-right: 20px;
+    transition: .3s;
+}
+.delete{
+    transition: .3s;
+
+}
+.edit:hover, .delete:hover{
+    opacity: .7;
+}
+.edit i{
+    color: #1e77eb
+}
+

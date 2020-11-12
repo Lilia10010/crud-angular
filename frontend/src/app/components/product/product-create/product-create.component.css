@@ -1,0 +1,26 @@
+form{
+    display: flex;
+    flex-direction: column;   
+}
+
+button{
+    margin-top: 25px;
+}
+button:nth-child(2){
+    margin-right: 15px;  
+}
+
+.mat-focused{
+    color: #fff !important;
+}
+
+
+/* 
+mat-label  {
+    color: blue;
+
+}
+
+.mat-input-element{
+    caret-color: #f10;
+} */

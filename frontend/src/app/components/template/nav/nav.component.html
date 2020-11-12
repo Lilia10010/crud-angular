@@ -1,26 +1,23 @@
-<div class="container">
-<nav class="section-left">
-        <div class="side-nav">
-            <ul>
-                <li>
-                    <a routerLink="/">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a routerLink="/products"> 
-                        Cadastro
-                    </a>
-                </li>
-            </ul>
-            
-            
-        </div>
-
-    </nav>
-
+<mat-sidenav-container class="container">
+    <mat-sidenav class="sidenav" mode="side" opened 
+        fixedInViewport="true" fixedTopGap="64">
+        <mat-nav-list class="nav-list">
+            <a mat-list-item routerLink="/">
+                <i class="material-icons">
+                    home
+                </i>
+                Início
+            </a>
+            <a mat-list-item  routerLink="/products">
+                <i class="material-icons">
+                    storefront
+                </i>
+                Produtos
+            </a>
+        </mat-nav-list>
+    </mat-sidenav>
     
-    <div class="section-right">
+    <mat-sidenav-content class="content">
         <router-outlet></router-outlet>
-    </div>
-</div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,16 +1,20 @@
-<header class="header">
+<mat-toolbar class="header mat-elevation-z4">
     <span>
         <a routerLink="/">
-            <img class="logo" src="assets/img/evoxLogo.svg" alt="">
+            <img class="logo" src="assets/img/evoxLogo.svg" alt="logo">
         </a>
     </span>
-
     <span class="title-group">
-        <a href="">
-            <a routerLink="/">
-                <span>aplicação crud</span>
-            </a>
+
+        <a routerLink="{{ routeUrl }}">
+
+            <i class="material-icons icon-header">
+
+                {{ icon }}
+            </i>
+
+            {{ title }}
+
         </a>
     </span>
-
-</header>
+</mat-toolbar>

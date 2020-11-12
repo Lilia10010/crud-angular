@@ -3,6 +3,10 @@ import { ProductService } from '../product.service';
 import { Router } from '@angular/router'
 
 
+import {MatSidenav} from '@angular/material/sidenav';
+import {MatButton} from '@angular/material/button';
+import { Product } from '../product.model';
+
 
 @Component({
   selector: 'app-product-create',
@@ -10,6 +14,11 @@ import { Router } from '@angular/router'
   styleUrls: ['./product-create.component.css']
 })
 export class ProductCreateComponent implements OnInit {
+
+  product: Product = {
+    name: '',
+    price: null
+  }
 
 
   constructor(private productService: ProductService, 
@@ -20,12 +29,18 @@ export class ProductCreateComponent implements OnInit {
 
   }
   createProduct(): void{
-    this.productService.showMessage('Produto criado')
+    this.productService.create(this.product).subscribe(() => {
+
+      this.productService.showMessage('Produto criado com sucesso')
+
+      this.router.navigate(['/products'])
+      
+    })
+    
   }
   cancelar(): void{ 
     this.router.navigate(['/products'])
     
   }
-
-
+  
   }

@@ -16,10 +16,10 @@ export class ForDirective implements OnInit {
 
    ngOnInit(): void{
 
-    for(let number of this.number){
-      this.container.createEmbeddedView(
-        this.template, {$implicit: number})
-    }
+    // for(let number of this.number){
+    //   this.container.createEmbeddedView(
+    //     this.template, {$implicit: number})
+    // }
 
     // console.log(this.number)
     // console.log(this.texto)
